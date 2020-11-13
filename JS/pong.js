@@ -2,8 +2,8 @@
 let largeur=$("#balle").width();
 let gauche=parseInt($("#balle").css("left"));
 let haut=parseInt($("#balle").css("top"));
-let Raqhauteur2=$("#raquette1").height();
-let Raqhauteur1=$("#raquette2").height();
+let Raqhauteur2=$("#raquette2").height();
+let Raqhauteur1=$("#raquette1").height();
 
 // creer un objet en le reliant a la classe 
 let raquette1=new Raquette($("#raquette1"))
@@ -24,7 +24,7 @@ let i=0;
 setInterval(function(){
     balle.gauche=balle.gauche+balle.vitesseX;
     balle.haut=balle.haut+balle.vitesseY;
-console.log(terrain.largeur)
+    console.log(terrain.largeur)
     if(balle.gauche>terrain.largeur){
         balle.gauche=terrain.largeur;
         balle.gauche = terrain.largeur-balle.diametre;
