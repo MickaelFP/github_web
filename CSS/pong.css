@@ -41,6 +41,10 @@ body{
     --hauteur: 25%;
 }
 
-#raquette2{
-    right : 0;
+#raquetteGauche{
+    left: 10%;
+}
+
+#raquetteDroite{
+    right: 10%;
 }
